@@ -1,4 +1,4 @@
-[Docker](http://www.docker.com/) image with **my** base development environment, 
-available [from Docker Hub](https://hub.docker.com/r/wikier/base-dev/):
+[Docker](http://www.docker.com/) image with **our** base development environment, 
+available [from Docker Hub](https://hub.docker.com/r/redlinkgmbh/base-dev/):
 
-    docker pull wikier/base-dev
+    docker pull redlinkgmbhr/base-dev
