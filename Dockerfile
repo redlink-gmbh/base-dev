@@ -26,6 +26,7 @@ RUN apt-get update -qq \
        unzip \
        zip \
        mongodb \
+       rpm \
        openjdk-8-jdk \
        maven
 
