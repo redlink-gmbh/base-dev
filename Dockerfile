@@ -1,4 +1,4 @@
-# Dockerfile for a base dev environment
+# Dockerfile for a rupi-ci environment
 
 FROM debian:stretch
 MAINTAINER sergio.@wikier.org
@@ -17,24 +17,13 @@ ENV LC_ALL C.UTF-8
 
 RUN apt-get update -qq \
     && apt-get install -y \
-       nodejs \
-       nodejs-legacy \
-       npm \
-       ruby-compass \
        git \
        wget \
        unzip \
        zip \
-       mongodb \
-       rpm \
+       libreoffice \
        openjdk-8-jdk \
        maven
-
-RUN npm install -g \
-    grunt \
-    grunt-cli \
-    bower
-RUN echo '{ "allow_root": true }' > ~/.bowerrc
 
 RUN apt-get clean -y  \
     && apt-get autoclean -y  \
