@@ -1,4 +1,4 @@
-# Dockerfile for a rupi-ci environment
+# Dockerfile for a the libs-CI
 
 FROM debian:stretch
 MAINTAINER sergio.@wikier.org
@@ -22,6 +22,11 @@ RUN apt-get update -qq \
        unzip \
        zip \
        libreoffice \
+       tesseract-ocr \
+       tesseract-ocr-osd \
+       tesseract-ocr-deu \
+       ghostscript \
+       imagemagick \
        openjdk-8-jdk \
        maven
 
@@ -29,4 +34,3 @@ RUN apt-get clean -y  \
     && apt-get autoclean -y  \
     && apt-get autoremove -y  \
     && rm -rf /var/lib/apt/lists/*
-
