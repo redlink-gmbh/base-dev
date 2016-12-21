@@ -1,7 +1,7 @@
 # Dockerfile for a the libs-CI
 
 FROM debian:stretch
-MAINTAINER sergio.fernandez@redlink.co
+LABEL maintainer "Sergio Fernandez <sergio.fernandez@redlink.co>"
 
 ENV DEBIAN_FRONTEND noninteractive
 
