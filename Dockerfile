@@ -21,6 +21,7 @@ RUN apt-get update -qq \
        nodejs-legacy \
        npm \
        ruby-compass \
+       pandoc \
        git \
        wget \
        unzip \
